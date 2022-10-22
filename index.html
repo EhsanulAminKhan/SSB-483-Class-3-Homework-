@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <!--base tag activator
+        <base href="/images/desk/" target="_blank">-->
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--header-->
+        <h1>The header element</h1>
+        <h2> Hello World!! </h2>
+        <h2> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h2>
+        <h3> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </h3>
+        <h4> It is a long established fact that a reader will be distracted by the readable </h4>
+        <h5> Contrary to popular belief, Lorem Ipsum is not simply random text. </h5>
+        <h6> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </h6>
+
+
+        <!--paragraph-->
+        <h4>The Paragraph element</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+        <!--image-->
+        <h4>The image element</h4>
+        <h4>The Original Image</h4>
+        <img src="https://images.pexels.com/photos/4491881/pexels-photo-4491881.jpeg" alt="person">
+        <h4>The Customized Image</h4>
+        <img src="images/person.jpg" alt="person">
+        <!--The Break <br> tag-->
+        <br>
+
+        <!--link (Internal & External)-->
+        <h3>The link element</h3>
+        <h4>The internal link element</h4>
+        <a href="../SSB-483/pages/about.html">About</a>
+        <!--Don't know why the file path is working like this for the internal link-->
+        <h4>The external link element</h4>
+        <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a>
+
+        <!--<address> element -->
+        <h4>The address element</h4>
+        <address>
+            <!--The Break <br> tag--><br>
+            <h4>The break element</h4> 
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>. 
+            Visit us at: <br>
+            Example.com <br>
+            Box 564, Disneyland <br>
+            USA
+        </address>
+
+        <!--<abbr> tag-->
+        <h4>The abbr element</h4>
+        <p>The <abbr title="WORLD HEALTH ORGANIZATION">WHO</abbr> was founded in 1948</p>
+
+        <!--<article> element-->
+        <h4>The article element</h4>
+        <article>
+        <h5>Google Chrome</h5>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+
+        <!--<aside> element-->
+        <h4>The aside element</h4>
+        <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+        <aside>
+            <h4>Epcot Center</h4>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </aside>
+
+        <!--<audio> element-->
+        <h4>The audio element</h4>
+
+        <p>Click on the play button to play a sound:</p>
+            
+        <audio controls>
+        <source src="audios/Child's Nightmare.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+
+        <!--<b> tag-->
+        <h4>The b element</h4>
+        <p>This is normal text - <b>and this is bold text</b>.</p>
+
+        
+        <!--The base element-->
+        <h4>The base element</h4>
+
+        <p><img src="images/person.jpg" alt="Person"> <br>- Notice that we have only specified a relative address for the image. Since we have not specified a base URL in the head section, the browser will look for the image at "root directory".</p>
+
+        <p><a href="images/desk/desk.jpg">Desk</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank". However, It wouldn't work in this particular scenario since I'm </p>
+
+        
+        <!--The bdi element-->
+        <h4>The bdi element</h4>
+
+        <p>In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").</p>
+
+        <p>User <bdi>hrefs</bdi>: 60 points</p>
+        <p>User <bdi>jdoe</bdi>: 80 points</p>
+        <p>User <bdi>إيان</bdi>: 90 points</p>
+        <p>User إيان: 90 points</p>
+        
+        <!--The Bi-Directional Override <bdo> element-->
+        <h4>The bdo element</h4>
+        <p>This paragraph will go left-to-right.</p>  
+        <p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>
+
+
+        <!--The blockquote <blockquote> element-->
+        <h4>The blockquote element</h4>
+
+        <p>Here is a quote from WWF's website:</p>
+
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+
+        <!--The Button <button> element -->
+        <h4>The button Element</h4>
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
+        <!--The Cite <cite> Element-->
+            <h4>The cite element</h4>
+
+            <img src="images/painting.jpg" alt="person"> <br>
+            <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+        <!--The Caption <caption> Element-->
+            <h4>The caption element</h4>
+
+            <table>
+            <p>The caption tag defines the table caption. It must be inserted immediately after the table tag</p>
+            <caption>Monthly savings</caption>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+            </table>
+
+        <!--The Code <code> Element-->
+        <h4>The code element</h4>
+
+        <p>The HTML <code>button</code> tag defines a clickable button.</p>
+            
+        <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+        <!--The details & summary elements-->
+        <h4>The details & summary element</h4>
+
+        <details>
+        <summary>Epcot Center</summary> 
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </details>
+
+
+        <!--The ins & del elements-->
+        <h4>The deletion & insertion element</h4>
+
+        <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+    </body>
+</html>
